@@ -1,0 +1,18 @@
+.home {
+    height: 100%;
+    display: grid;
+    text-align: center;
+}
+
+.title-wrapper {
+    margin: auto;
+}
+
+.title {
+    font-size: 1em;
+}
+
+.subtitle {
+    
+    font-size: 0.9em;
+}
