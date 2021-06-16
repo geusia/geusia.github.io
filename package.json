@@ -1,6 +1,7 @@
 {
   "name": "geusia",
   "version": "1.0.0",
+  "license": "UNLICENSED",
   "scripts": {
     "dev": "next",
     "build": "next build",
@@ -11,7 +12,7 @@
   },
   "dependencies": {
     "classnames": "^2.3.1",
-    "next": "^9.5.2",
+    "next": "^11.0.1-canary.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
