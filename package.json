@@ -6,15 +6,16 @@
     "build": "next build",
     "start": "next start",
     "export": "next export",
-    "deploy": "rm -rf node_modules/.cache && rm -rf out && next build && next export && touch out/.nojekyll && git add out/ && git commit -m \"Deploying to gh-pages production\" && git push origin :gh-pages && git subtree push --prefix out origin gh-pages"
+    "deploy": "rimraf node_modules/.cache && rimraf out && next build && next export && touch out/.nojekyll && touch out/CNAME && echo \"geusia.com\" >> out/CNAME && git add out/ && git commit -m \"Deploying to gh-pages production\" && git subtree push --prefix out origin gh-pages",
+    "redeploy": "rimraf node_modules/.cache && rimraf out && next build && next export && touch out/.nojekyll && touch out/CNAME && echo \"geusia.com\" >> out/CNAME && git add out/ && git commit -m \"Deploying to gh-pages production\" && git push origin `git subtree split --prefix out master`:gh-pages --force"
   },
   "dependencies": {
-    "classnames": "^2.2.6",
-    "next": "latest",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+    "classnames": "^2.3.1",
+    "next": "^9.5.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "babel-plugin-transform-define": "^1.3.0"
+    "babel-plugin-transform-define": "^2.0.0"
   }
 }

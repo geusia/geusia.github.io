@@ -19,7 +19,7 @@ class Layout extends React.Component {
         return (
             <div className={cx('main')}>
                 <Head>
-                    <title>project geusia</title>
+                    <title>geusia</title>
                     <link rel="shortcut icon" href={process.env.BACKEND_URL + 'static/favicon.ico'} />
                 </Head>
                 <div className={cx('main-layout')}>
